@@ -1,9 +1,12 @@
-# Advanced Honeypot Framework
+# Honeypot Framework
+
+[![Go Report Card](https://goreportcard.com/badge/github.com/sudarshantk/honeypot)](https://goreportcard.com/report/github.com/sudarshantk/honeypot)
+[![Go Reference](https://pkg.go.dev/badge/github.com/sudarshantk/honeypot.svg)](https://pkg.go.dev/github.com/sudarshantk/honeypot)
+
+A powerful honeypot framework that allows you to create and manage honeypots for various protocols including SSH, HTTP, and TCP. This framework helps you monitor and analyze potential security threats by simulating vulnerable services.
 
 [![CI](https://github.com/mariocandela/beelzebub/actions/workflows/ci.yml/badge.svg)](https://github.com/mariocandela/beelzebub/actions/workflows/ci.yml) [![Docker](https://github.com/mariocandela/beelzebub/actions/workflows/docker-image.yml/badge.svg)](https://github.com/mariocandela/beelzebub/actions/workflows/docker-image.yml) [![codeql](https://github.com/mariocandela/beelzebub/actions/workflows/codeql.yml/badge.svg)](https://github.com/mariocandela/beelzebub/actions/workflows/codeql.yml)
-[![Go Report Card](https://goreportcard.com/badge/github.com/mariocandela/beelzebub/v3)](https://goreportcard.com/report/github.com/mariocandela/beelzebub/v3)
 [![codecov](https://codecov.io/gh/mariocandela/beelzebub/graph/badge.svg?token=8XTK7D4WHE)](https://codecov.io/gh/mariocandela/beelzebub)
-[![Go Reference](https://pkg.go.dev/badge/github.com/mariocandela/beelzebub/v3.svg)](https://pkg.go.dev/github.com/mariocandela/beelzebub/v3)
 [![Mentioned in Awesome Go](https://awesome.re/mentioned-badge.svg)](https://github.com/avelino/awesome-go)  
 
 ## Overview
