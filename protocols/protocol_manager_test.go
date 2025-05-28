@@ -2,10 +2,11 @@ package protocols
 
 import (
 	"errors"
-	"github.com/mariocandela/beelzebub/v3/parser"
-	"github.com/mariocandela/beelzebub/v3/tracer"
-	"github.com/stretchr/testify/assert"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
+	"github.com/sudarshantk/honeypot/parser"
+	"github.com/sudarshantk/honeypot/tracer"
 )
 
 type mockServiceStrategyValid struct {

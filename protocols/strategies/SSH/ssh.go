@@ -7,10 +7,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/mariocandela/beelzebub/v3/historystore"
-	"github.com/mariocandela/beelzebub/v3/parser"
-	"github.com/mariocandela/beelzebub/v3/plugins"
-	"github.com/mariocandela/beelzebub/v3/tracer"
+	"github.com/sudarshantk/honeypot/historystore"
+	"github.com/sudarshantk/honeypot/parser"
+	"github.com/sudarshantk/honeypot/plugins"
+	"github.com/sudarshantk/honeypot/tracer"
 
 	"github.com/gliderlabs/ssh"
 	"github.com/google/uuid"

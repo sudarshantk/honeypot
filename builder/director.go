@@ -3,9 +3,10 @@ package builder
 import (
 	"context"
 	"encoding/json"
-	"github.com/mariocandela/beelzebub/v3/parser"
-	"github.com/mariocandela/beelzebub/v3/plugins"
-	"github.com/mariocandela/beelzebub/v3/tracer"
+
+	"github.com/sudarshantk/honeypot/parser"
+	"github.com/sudarshantk/honeypot/plugins"
+	"github.com/sudarshantk/honeypot/tracer"
 
 	amqp "github.com/rabbitmq/amqp091-go"
 	log "github.com/sirupsen/logrus"

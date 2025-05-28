@@ -2,10 +2,11 @@ package main
 
 import (
 	"flag"
+	"log"
 	"runtime/debug"
 
-	"github.com/mariocandela/beelzebub/v3/builder"
-	"github.com/mariocandela/beelzebub/v3/parser"
+	"github.com/sudarshantk/honeypot/builder"
+	"github.com/sudarshantk/honeypot/parser"
 
 	log "github.com/sirupsen/logrus"
 )

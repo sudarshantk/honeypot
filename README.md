@@ -5,20 +5,13 @@
 
 A powerful honeypot framework that allows you to create and manage honeypots for various protocols including SSH, HTTP, and TCP. This framework helps you monitor and analyze potential security threats by simulating vulnerable services.
 
-[![CI](https://github.com/mariocandela/beelzebub/actions/workflows/ci.yml/badge.svg)](https://github.com/mariocandela/beelzebub/actions/workflows/ci.yml) [![Docker](https://github.com/mariocandela/beelzebub/actions/workflows/docker-image.yml/badge.svg)](https://github.com/mariocandela/beelzebub/actions/workflows/docker-image.yml) [![codeql](https://github.com/mariocandela/beelzebub/actions/workflows/codeql.yml/badge.svg)](https://github.com/mariocandela/beelzebub/actions/workflows/codeql.yml)
-[![codecov](https://codecov.io/gh/mariocandela/beelzebub/graph/badge.svg?token=8XTK7D4WHE)](https://codecov.io/gh/mariocandela/beelzebub)
-[![Mentioned in Awesome Go](https://awesome.re/mentioned-badge.svg)](https://github.com/avelino/awesome-go)  
-
 ## Overview
 
 This is an advanced honeypot framework designed to provide a highly secure environment for detecting and analyzing cyber attacks. It offers a low code approach for easy implementation and uses AI to mimic the behavior of a high-interaction honeypot.
 
-<img src="https://beelzebub.netlify.app/go-beelzebub.png" alt="Beelzebub Logo" width="200"/>
-
 ## LLM Honeypot
 
 [![asciicast](https://asciinema.org/a/665295.svg)](https://asciinema.org/a/665295)
-
 
 ## Telegram Bot for Real-Time Attacks
 
@@ -26,7 +19,7 @@ Stay updated on real-time attacks by joining our dedicated Telegram channel: [Te
 
 ## Examples
 
-To better understand the capabilities of Beelzebub, you can explore our example repository: [mariocandela/beelzebub-example](https://github.com/mariocandela/beelzebub-example)
+To better understand the capabilities of this framework, you can explore our example repository: [sudarshantk/honeypot-example](https://github.com/sudarshantk/honeypot-example)
 
 ## Quick Start
 

@@ -4,7 +4,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/mariocandela/beelzebub/v3/plugins"
+	"github.com/sudarshantk/honeypot/plugins"
 )
 
 var (

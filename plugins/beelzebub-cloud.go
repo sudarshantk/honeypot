@@ -6,9 +6,9 @@ import (
 	"fmt"
 
 	"github.com/go-resty/resty/v2"
-	"github.com/mariocandela/beelzebub/v3/parser"
-	"github.com/mariocandela/beelzebub/v3/tracer"
 	log "github.com/sirupsen/logrus"
+	"github.com/sudarshantk/honeypot/parser"
+	"github.com/sudarshantk/honeypot/tracer"
 	"gopkg.in/yaml.v3"
 )
 

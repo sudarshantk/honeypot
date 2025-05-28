@@ -7,13 +7,14 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/mariocandela/beelzebub/v3/parser"
-	"github.com/mariocandela/beelzebub/v3/plugins"
-	"github.com/mariocandela/beelzebub/v3/protocols"
-	"github.com/mariocandela/beelzebub/v3/protocols/strategies/HTTP"
-	"github.com/mariocandela/beelzebub/v3/protocols/strategies/SSH"
-	"github.com/mariocandela/beelzebub/v3/protocols/strategies/TCP"
-	"github.com/mariocandela/beelzebub/v3/tracer"
+	"github.com/sudarshantk/honeypot/parser"
+	"github.com/sudarshantk/honeypot/plugins"
+	"github.com/sudarshantk/honeypot/protocols"
+	"github.com/sudarshantk/honeypot/protocols/strategies/HTTP"
+	"github.com/sudarshantk/honeypot/protocols/strategies/MySQL"
+	"github.com/sudarshantk/honeypot/protocols/strategies/SSH"
+	"github.com/sudarshantk/honeypot/protocols/strategies/TCP"
+	"github.com/sudarshantk/honeypot/tracer"
 
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	amqp "github.com/rabbitmq/amqp091-go"
@@ -112,6 +113,7 @@ Honeypot Framework, happy hacking!`)
 	secureShellStrategy := &SSH.SSHStrategy{}
 	hypertextTransferProtocolStrategy := &HTTP.HTTPStrategy{}
 	transmissionControlProtocolStrategy := &TCP.TCPStrategy{}
+	mysqlStrategy := &MySQL.MySQLStrategy{}
 
 	// Init Tracer strategies, and set the trace strategy default HTTP
 	protocolManager := protocols.InitProtocolManager(b.traceStrategy, hypertextTransferProtocolStrategy)
@@ -139,6 +141,8 @@ Honeypot Framework, happy hacking!`)
 			protocolManager.SetProtocolStrategy(secureShellStrategy)
 		case "tcp":
 			protocolManager.SetProtocolStrategy(transmissionControlProtocolStrategy)
+		case "mysql":
+			protocolManager.SetProtocolStrategy(mysqlStrategy)
 		default:
 			log.Fatalf("protocol %s not managed", beelzebubServiceConfiguration.Protocol)
 		}

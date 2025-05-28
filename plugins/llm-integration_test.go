@@ -1,13 +1,14 @@
 package plugins
 
 import (
-	"github.com/go-resty/resty/v2"
-	"github.com/jarcoal/httpmock"
-	"github.com/mariocandela/beelzebub/v3/tracer"
-	"github.com/stretchr/testify/assert"
 	"net/http"
 	"os"
 	"testing"
+
+	"github.com/go-resty/resty/v2"
+	"github.com/jarcoal/httpmock"
+	"github.com/stretchr/testify/assert"
+	"github.com/sudarshantk/honeypot/tracer"
 )
 
 const SystemPromptLen = 4

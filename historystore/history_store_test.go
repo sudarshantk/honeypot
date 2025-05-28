@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mariocandela/beelzebub/v3/plugins"
 	"github.com/stretchr/testify/assert"
+	"github.com/sudarshantk/honeypot/plugins"
 )
 
 func TestNewHistoryStore(t *testing.T) {

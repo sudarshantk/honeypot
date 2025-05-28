@@ -4,12 +4,13 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/go-resty/resty/v2"
-	"github.com/mariocandela/beelzebub/v3/tracer"
-	log "github.com/sirupsen/logrus"
 	"os"
 	"regexp"
 	"strings"
+
+	"github.com/go-resty/resty/v2"
+	log "github.com/sirupsen/logrus"
+	"github.com/sudarshantk/honeypot/tracer"
 )
 
 const (

@@ -1,14 +1,15 @@
-package integration
+package integration_test
 
 import (
 	"encoding/json"
-	"github.com/mariocandela/beelzebub/v3/builder"
-	"github.com/mariocandela/beelzebub/v3/parser"
-	"github.com/mariocandela/beelzebub/v3/tracer"
 	"net"
 	"net/http"
 	"os"
 	"testing"
+
+	"github.com/sudarshantk/honeypot/builder"
+	"github.com/sudarshantk/honeypot/parser"
+	"github.com/sudarshantk/honeypot/tracer"
 
 	"github.com/go-resty/resty/v2"
 	"github.com/melbahja/goph"

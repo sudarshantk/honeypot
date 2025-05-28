@@ -8,9 +8,9 @@ import (
 
 	"github.com/go-resty/resty/v2"
 	"github.com/jarcoal/httpmock"
-	"github.com/mariocandela/beelzebub/v3/parser"
-	"github.com/mariocandela/beelzebub/v3/tracer"
 	"github.com/stretchr/testify/assert"
+	"github.com/sudarshantk/honeypot/parser"
+	"github.com/sudarshantk/honeypot/tracer"
 )
 
 func TestBuildSendEventFailValidation(t *testing.T) {
