@@ -1,4 +1,4 @@
-# Beelzebub
+# Advanced Honeypot Framework
 
 [![CI](https://github.com/mariocandela/beelzebub/actions/workflows/ci.yml/badge.svg)](https://github.com/mariocandela/beelzebub/actions/workflows/ci.yml) [![Docker](https://github.com/mariocandela/beelzebub/actions/workflows/docker-image.yml/badge.svg)](https://github.com/mariocandela/beelzebub/actions/workflows/docker-image.yml) [![codeql](https://github.com/mariocandela/beelzebub/actions/workflows/codeql.yml/badge.svg)](https://github.com/mariocandela/beelzebub/actions/workflows/codeql.yml)
 [![Go Report Card](https://goreportcard.com/badge/github.com/mariocandela/beelzebub/v3)](https://goreportcard.com/report/github.com/mariocandela/beelzebub/v3)
@@ -8,7 +8,7 @@
 
 ## Overview
 
-Beelzebub is an advanced honeypot framework designed to provide a highly secure environment for detecting and analyzing cyber attacks. It offers a low code approach for easy implementation and uses AI to mimic the behavior of a high-interaction honeypot.
+This is an advanced honeypot framework designed to provide a highly secure environment for detecting and analyzing cyber attacks. It offers a low code approach for easy implementation and uses AI to mimic the behavior of a high-interaction honeypot.
 
 <img src="https://beelzebub.netlify.app/go-beelzebub.png" alt="Beelzebub Logo" width="200"/>
 
@@ -27,18 +27,14 @@ To better understand the capabilities of Beelzebub, you can explore our example 
 
 ## Quick Start
 
-We provide two quick start options for build and run Beelzebub: using Docker Compose or the Go compiler.
-
 ### Using Docker Compose
 
 1. Build the Docker images:
-
    ```bash
    $ docker-compose build
    ```
 
-2. Start Beelzebub in detached mode:
-
+2. Start the framework in detached mode:
    ```bash
    $ docker-compose up -d
    ```
@@ -46,73 +42,67 @@ We provide two quick start options for build and run Beelzebub: using Docker Com
 ### Using Go Compiler
 
 1. Download the necessary Go modules:
-
    ```bash
    $ go mod download
    ```
 
-2. Build the Beelzebub executable:
-
+2. Build the executable:
    ```bash
    $ go build
    ```
 
-3. Run Beelzebub:
-
+3. Run the framework:
    ```bash
-   $ ./beelzebub
+   $ ./main
    ```
 
 ### Deploy on kubernetes cluster using helm
 
 1. Install helm
 
-2. Deploy beelzebub:
-
+2. Deploy the framework:
    ```bash
-   $ helm install beelzebub ./beelzebub-chart
+   $ helm install honeypot ./honeypot-chart
    ```
 
-3. Next release
-
+3. Next release:
    ```bash
-   $ helm upgrade beelzebub ./beelzebub-chart
+   $ helm upgrade honeypot ./honeypot-chart
    ```
+
 ## Testing
 
-We provide two types of tests: unit tests and integration tests.
-
 ### Unit Tests
-
-To run unit tests:
-
 ```bash
 $ make test.unit
 ```
 
 ### Integration Tests
-
-To run integration tests:
-
 ```bash
 $ make test.dependencies.start
 $ make test.integration
 $ make test.dependencies.down
 ```
 
+## Configuration
+
+The framework allows easy configuration for different services and ports. Create a new file for each service/port within the `/configurations/services` directory.
+
+To execute with your custom path:
+```bash
+$ ./main --confCore ./configurations/config.yaml --confServices ./configurations/services/
+```
+
 ## Key Features
 
-Beelzebub offers a wide range of features to enhance your honeypot environment:
-
-- Support for Ollama
-- Support for OpenAI
+- Support for OpenAI integration
 - SSH Honeypot
 - HTTP Honeypot
 - TCP Honeypot
 - Prometheus openmetrics integration
 - Docker integration
 - RabbitMQ integration
-- kubernetes
+- Kubernetes support
 
 ## Example Configuration
 
@@ -319,7 +309,7 @@ Happy hacking!
 
 ## License
 
-Beelzebub is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Supported by
 [![JetBrains logo.](https://resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg)](https://jb.gg/OpenSourceSupport)

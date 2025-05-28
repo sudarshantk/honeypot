@@ -1,18 +1,22 @@
-module github.com/mariocandela/beelzebub/v3
+module github.com/sudarshantk/honeypot
 
-go 1.24
+go 1.21
 
 toolchain go1.24.1
 
 require (
-	github.com/gliderlabs/ssh v0.3.8
+	github.com/gliderlabs/ssh v0.3.5
+	github.com/go-chi/chi/v5 v5.0.10
+	github.com/go-chi/cors v1.2.1
 	github.com/go-resty/resty/v2 v2.16.5
 	github.com/google/uuid v1.6.0
 	github.com/jarcoal/httpmock v1.4.0
 	github.com/melbahja/goph v1.4.0
-	github.com/prometheus/client_golang v1.22.0
+	github.com/prometheus/client_golang v1.17.0
 	github.com/rabbitmq/amqp091-go v1.10.0
 	github.com/sirupsen/logrus v1.9.3
+	github.com/spf13/cobra v1.7.0
+	github.com/streadway/amqp v1.1.0
 	github.com/stretchr/testify v1.10.0
 	golang.org/x/crypto v0.36.0
 	golang.org/x/term v0.32.0

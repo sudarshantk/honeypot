@@ -1,9 +1,9 @@
 version: "3.9"
 
 services:
-  beelzebub:
+  honeypot:
     build: .
-    container_name: beelzebub
+    container_name: honeypot
     restart: always
     ports:
       - "2222:22"
